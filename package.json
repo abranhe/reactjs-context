@@ -1,0 +1,33 @@
+{
+	"name": "reactjs-context",
+	"version": "0.0.0-placeholder.1",
+	"description": "The fastest way to start working with React Context API",
+	"license": "MIT",
+	"repository": "abranhe/reactjs-context",
+	"homepage:": "https://p.abranhe.com/reactjs-context",
+	"author": {
+		"name": "Abraham Hernandez",
+		"email": "abraham@abranhe.com",
+		"url": "https://abranhe.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"connect.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"xo": "^0.24.0"
+	},
+	"peerDependencies": {
+		"react": "^16.12.0"
+	}
+}
