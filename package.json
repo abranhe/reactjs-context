@@ -1,33 +1,50 @@
 {
-	"name": "reactjs-context",
-	"version": "0.0.0-placeholder.1",
-	"description": "The fastest way to start working with React Context API",
-	"license": "MIT",
-	"repository": "abranhe/reactjs-context",
-	"homepage:": "https://p.abranhe.com/reactjs-context",
-	"author": {
-		"name": "Abraham Hernandez",
-		"email": "abraham@abranhe.com",
-		"url": "https://abranhe.com"
-	},
-	"engines": {
-		"node": ">=8"
-	},
-	"scripts": {
-		"test": "xo && ava && tsd"
-	},
-	"files": [
-		"index.js",
-		"connect.js"
-	],
-	"keywords": [
-		""
-	],
-	"dependencies": {},
-	"devDependencies": {
-		"xo": "^0.24.0"
-	},
-	"peerDependencies": {
-		"react": "^16.12.0"
-	}
+  "name": "reactjs-context",
+  "version": "0.0.0-beta",
+  "description": "The fastest way to start working with React Context API",
+  "license": "MIT",
+  "repository": "abranhe/reactjs-context",
+  "homepage:": "https://p.abranhe.com/reactjs-context",
+  "author": {
+    "name": "Abraham Hernandez",
+    "email": "abraham@abranhe.com",
+    "url": "https://abranhe.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "xo"
+  },
+  "main": "dist/index.js",
+  "files": [ "dist/" ],
+  "keywords": [ "react" ],
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "react-test-renderer": "^16.12.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "xo": "^0.25.3"
+  },
+  "xo": {
+    "extends": "xo-react"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0"
+  }
 }
