@@ -9,7 +9,7 @@ Reactjs-Context (`reactjs-context`) is a simple library made to easily work with
 
 Well,
 
-[<img src="https://cdn.abranhe.com/projects/reactjs-context/tweet.png" width="400">](https://p.abranhe.com/reactjs-context)
+[<img src="https://cdn.abranhe.com/projects/reactjs-context/tweet.png" width="400">](https://twitter.com/dan_abramov/status/1097866569701621763)
 
 In other words: *removing react-redux from our apps*.
 
@@ -102,7 +102,7 @@ export default () => {
 
 This is a simple demo demostrating the usage of `reactjs-context` with a countere demo.
 
-[<img src="https://cdn.abranhe.com/projects/reactjs-context/demo.png" width="500">](https://p.abranhe.com/reactjs-context)
+[<img src="https://cdn.abranhe.com/projects/reactjs-context/demo.png" width="500">](https://reactjs-context.demos.abranhe.com)
 
 ## Questions?
 
@@ -110,7 +110,7 @@ You can ask your question on [Stackoverflow](https://stackoverflow.com) open a n
 
 ## New features?
 
-I will try to implement `newReducer()` or `newAction()` that instead of creating that ouside of the package, just add a new action and the action lives on a global object inside of the package. It will also have default actions: like `reset()`.
+I will try to implement `newReducer()` or `newAction()` that instead of creating that ouside of the package, just add a new action and the action lives on a global object inside of the package. It will also have default actions: like `reset()`. Please don't laugh, this is just me writing down ideas to come back later.
 
 Idea example: 
 
