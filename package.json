@@ -1,6 +1,6 @@
 {
   "name": "reactjs-context",
-  "version": "0.0.0-beta",
+  "version": "0.0.1",
   "description": "The fastest way to start working with React Context API",
   "license": "MIT",
   "repository": "abranhe/reactjs-context",

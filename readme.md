@@ -77,27 +77,57 @@ const reducer = (state, action) => {
   }
 };
 
+export default () => (
+  <Provider initialState={initialState} reducer={reducer}>
+    <Consumer>
+      {({ state, dispatch }) => {
+        const { increment, decrement } = actions(dispatch);
+        return (
+          <div>
+            <h1>{state.counter}</h1>
+            <div>
+              <button onClick={() => decrement()}>-</button>
+              <button onClick={() => increment()}>+</button>
+            </div>
+          </div>
+        );
+      }}
+    </Consumer>
+  </Provider>
+);
+```
 
-export default () => {
-  return(
-    <Provider initialState={initialState} reducer={reducer}>
-        <Consumer>
-          {({ state, dispatch }) => {
-            const { increment, decrement } = actions(dispatch);
-            return (
-              <div>
-                <h1>{state.counter}</h1>
-                <div>
-                  <button onClick={() => decrement()}>-</button>
-                  <button onClick={() => increment()}>+</button>
-                </div>
-              </div>
-            );
-          }}
-        </Consumer>
-    </Provider>
+Otherwise you can use `connect()` to access the global state via props.
+
+```js
+import { Provider } from 'reactjs-context';
+import Counter from './counter';
+
+export default () => (
+  <Provider initialState={initialState} reducer={reducer}>
+    <Counter/>
+  </Provider>
+);
+```
+
+Inside `counter.js`
+
+```js
+import { connect } from 'reactjs-context';
+
+export default connect(({ context: {state, dispatch} }) => {
+  const { increment, decrement } = actions(dispatch);
+
+  return (
+    <div>
+      <h1>{state.counter}</h1>
+      <div>
+        <button onClick={() => decrement()}>-</button>
+        <button onClick={() => increment()}>+</button>
+      </div>
+    </div>
   );
-};
+});
 ```
 
 This is a simple demo demostrating the usage of `reactjs-context` with a countere demo.
